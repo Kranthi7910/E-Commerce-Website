@@ -1,0 +1,778 @@
+body
+{
+    background: rgb(1, 5, 20);
+    font-family: 'Courier New', Courier, monospace;
+}
+img
+{
+    min-width: 100%;
+    max-width:100%;
+    max-height:100%;
+}
+.adminPageWrapper
+{
+    width: 100%;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 100%;
+}
+.currentShowTimesBody
+{
+	width: 100%;
+	position: relative;
+	color: black;
+	box-shadow: 0px 0px 3px black;
+}
+.showingEdit
+{
+	width: 100%;
+	position: relative;
+	display: block;
+	padding: 16px 8px 3px 8px;
+	border-bottom: 1px solid black;
+}
+.showTimeInfo
+{
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	font-family: 1rem;
+}
+.showTimeInfo label
+{
+	position: absolute;
+	z-index: 5;
+	top: -15px;
+	left: 0px;
+	font-weight: 900;
+	background: white;
+}
+.showTimeInfo button
+{
+	width: 100%;
+	padding: 3px 9px;
+	outline: none;
+	border: 1px solid black;
+	background: none;
+}
+.showTimeInfo button:hover
+{
+	font-weight: 900;
+	box-shadow: 0px 0px 3px blue;
+}
+.showTimeInfo input, .showTimeInfo select
+{
+	width: 100%;
+	background: white;
+	outline: none;
+	border: black solid 1px;
+	position: relative;
+	padding: 7px 12px;
+}
+.currentShowTimesBody h3
+{
+	font-weight: 900;
+	text-align: center;
+}
+canvas#pieChart {
+  background-color: rgb(15, 30, 60);
+}
+.goalBodyWrapper
+{
+    padding: 8px 5px;
+    text-align: left;
+    background: rgb(15, 30, 60);
+    color: white;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+.goalBodyWrapper p
+{
+    padding: 0 !important;
+    margin: 0px 0px 0px 0px !important;
+    font-size: 1.125rem;
+}
+.fixedNav
+{
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    position: fixed;
+    height: 100%;
+    text-align: left;
+    color: white;
+    background: rgb(1,5,20);
+    display: block;
+    padding: 0px;
+    z-index: 9999;
+}
+textarea
+{
+    padding-left: 3px !important;
+}
+input[type="date"]
+{
+    outline: none;
+    border: 1px solid rgb(20, 20, 80);
+}
+.sideNavWrapper
+{
+    height: 100%;
+    text-align: left;
+    color: white;
+    position: relative;
+    display: block;
+    padding: 0px;
+}
+.adminTabContent
+{
+    width: 100%;
+    border: none;
+    padding: 0;
+    display: none;
+    color: rgb(13, 13, 65);
+    background: none;
+}
+.welcomeAdmin
+{
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+    margin-top: 12px;
+}
+.welcomeAdmin p
+{
+    padding: 0;
+    margin: 0;
+}
+.adminTabLinksWrapper
+{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.adminTabLinksWrapper button
+{
+    display: block;
+    width: 100%;
+    background: none;
+    color: white;
+    padding: 20px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-size: .8rem;
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+}
+.adminTabLinksWrapper button:hover
+{
+    box-shadow: 0px 0px 5px white;
+    background: rgb(20, 20, 80);
+}
+.activeTab
+{
+    display: block;
+}
+.activeAdminTab
+{
+    border-top: 1px rgba(115, 159, 255, 1) solid !important;
+    border-bottom: 1px rgba(115, 159, 255, 1) solid !important;
+     box-shadow: 
+        inset 0px 11px 8px -10px white,
+        inset 0px -11px 8px -10px white; 
+}
+.adminHeader
+{
+    width: 100%;
+    background: rgb(1, 5, 20);
+    padding: 15px 10px 0px 10px;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0px 0px 5px rgba(115, 159, 255, 1);
+}
+.logoutBtn
+{
+    padding: 0px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+.logoutBtn:hover
+{
+    box-shadow: 0px 0px 3px rgb(1,5, 20);
+}
+.adminHeader h3
+{
+    float: left;
+}
+.tabBody
+{
+    background: rgb(1, 5, 20);
+    width: 100%;
+}
+
+.managementHeader
+{
+    background: rgb(236, 236, 236);
+    color: black;
+}
+
+.analyticsBody
+{
+    background: url("../images/Background/Black_Particles_Loop.jpg");
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#analytics
+{
+    text-align: center;
+}
+.pAnalytics p
+{
+    padding: 7px 10px;
+    margin: 0;
+    display: block;
+}
+.pAnalytics
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 8px;
+}
+
+.js-analytic
+{
+    font-size: 1.75rem !important;
+}
+
+.js-counter
+{
+    border-radius: 50%;
+    background: none;
+    fill: transparent;
+    box-shadow: 0px 0px 5px rgba(115, 159, 255, 1);
+    border: solid .25px white;
+    position: relative;
+    width: 100%;
+}
+.pAnalytics > [class*='col-'] 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.movieObjects
+{
+    border-bottom: 1px solid rgba(115, 159, 255, 1);
+}
+
+#addMovie
+{
+    margin: 10px 0px 10px 0px;
+    display: none;
+}
+
+.movieManagementBody
+{
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 3px rgba(115, 159, 255, 1);
+    padding: 0;
+}
+.movieManagementBody input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 4px;
+  margin: 10px auto;
+  display: block;
+}
+.movieManagementBody .row
+{
+    padding: 5px;
+}
+.searchAdminMovie
+{
+    outline: none;
+    padding: 8px;
+    position: relative;
+    border: 1px solid rgb(6, 6, 12);
+    background: none;
+}
+.admLable
+{
+	position: absolute;
+    top: -10px;
+    left: 24px;
+    z-index: 10;
+    background: rgb(236, 236, 236);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.moviePic
+{
+    width: 100%;
+    padding: 0;
+}
+.mostPopularMovieWrapper
+{
+    text-align: center;
+    color: white;
+    padding: 16px 10px;
+    background: rgb(32, 33, 43);
+    width: 100%;
+}
+.mostPopularMovieWrapper p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.moviePic img, .mostPopularMovieWrapper img, .goalBodyWrapper img
+{
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+.movieManagementBody button
+{
+    background: none;
+    border: rgb(20, 20, 80) solid 1px;
+    box-shadow: 0px 0px 3px rgba(115, 159, 255, 1);
+    margin: auto;
+    width: 45%;
+}
+.deleteBtn
+{
+    display: block;
+    margin: auto;
+    background: none;
+    width: 100% !important;
+    border: rgb(20, 20, 80) solid 1px;
+    box-shadow: 0px 0px 3px rgba(115, 159, 255, 1);
+}
+.editBtn
+{
+    margin: 8px auto !important;
+    display: block;
+}
+.movieInfoDisplay
+{
+    display: none;
+}
+#addBtnDe
+{
+    background: none;
+    border: rgb(20, 20, 80) solid 1px;
+    box-shadow: 0px 0px 3px rgba(115, 159, 255, 1);
+    margin: auto;
+    display: block;
+    color: white;
+    padding: 3px 5px;
+    width: 33%;
+}
+.adminBtn
+{
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    padding: 3px;
+}
+.movieInfo
+{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+.movieInfo label
+{
+    font-size: .7rem;
+}
+.movieManagementBody label
+{
+    margin-bottom: 0px;
+}
+#my-row {
+    display: table;
+}
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-row .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+.textFieldDes2
+{
+    width: 100%;
+    padding: 3px 5px 3px 0px;
+    margin-bottom: 15px;
+    color: rgb(45, 69, 121);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid rgb(45, 69, 121);
+}
+.textFieldDes2:focus
+{
+    color: rgb(45, 69, 121);
+    box-shadow: 0px 0px 5px rgba(115, 159, 255, 1);
+}
+.schedule
+{
+	margin-top: 5px;
+	width: 100%;
+	color: black;
+	text-align: left;
+	border: none;
+	border-bottom: .5px solid black;
+}
+.schedule label, .schedule p
+{
+	margin: 0;
+}
+.schedule label
+{
+	padding: 0;
+	font-weight: 900;
+	display: block;
+}
+.schedule p
+{
+	font-weight: 350;
+	padding: 0px 8px !important;
+	display: inline-block;
+}
+.showtimeSchedule
+{
+	position: relative;
+	padding: 4px 8px;
+	width: 100%;
+	border: none;
+	background: white;
+}
+.showTimeFormBody
+{
+	width: 100%;
+	padding: 8px 16px;
+	color: black;
+}
+.showTimeWrapper
+{
+	box-shadow: 0px 0px 3px black;
+	width: 100%;
+	padding: 2px 4px;
+	position: relative;
+}
+.search
+{
+	position: relative;
+	width: 100%;
+	padding: 10px 30px;
+}
+.search input
+{
+	outline: none;
+	border: solid 1px rgba(115, 159, 255, 1);
+	background: white;
+	color: black;
+	padding: 12px 18px 12px 30px;
+	font-size: 2rem;
+	font-weight: 600;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.search label
+{
+	position: absolute;
+	background: white;
+	font-weight: 900;
+	top: -2px;
+	left: 62px;
+	font-size: 1.25rem;
+	z-index: 999;
+}
+.searchResultsBody
+{
+	width: 100%;
+	padding: 10px 30px;
+	position: relative;
+	background: white;
+	color: black;
+}
+.addST
+{
+	width: 100%;
+	position: relative
+}
+.searchResultsBody input, .searchResultsBody select
+{
+	position: relative;
+	margin-bottom: 10px;
+	background: none;
+	outline: none;
+	border: black solid 1px;
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	padding: 12px;
+}
+.searchResultsBody button
+{
+	position: relative;
+	background: none;
+	border-radius: 38px;
+	outline: none;
+	border: solid 1px black;
+	width: 100%;
+	font-size: 1.25rem;
+	padding: 2px 8px;
+	text-align: center;
+	color: black;
+}
+.searchResultsBody button:hover
+{
+	font-weight: 900;
+	box-shadow: 0px 0px 3px blue;
+}
+
+.searchResultsBody label
+{
+	font-weight: 900;
+	position: absolute;
+    top: -10px;
+    background: white;
+    left: 32px;
+    z-index: 2;
+}
+.promoField
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 15px 0px;
+}
+.promoField label
+{
+	font-weight: 900;
+	letter-spacing: 1px;
+	color: white;
+	position: absolute;
+	background: rgb(15, 30, 60);
+	top: -15px;
+	left: 5px;
+}
+.promoBody
+{
+	width: 100%;
+	padding: 16px 8px;	
+	margin: 25px 0px;
+	position: relative;
+	display: block;
+	border: none;
+	border-bottom: solid .5px #00aeef;
+}
+.promoBody h2
+{
+	text-align: center;
+	font-size: 1.75rem;
+}
+.promoBody input
+{
+	margin: 25px 0px;
+	width: 100%;
+	display: block;
+	position: releative;
+	background: none;
+	color: white;
+	border: none;
+	box-shadow: 0px 0px 3px white, 0px 0px 3px #00aeef;
+	padding: 12px 10px;
+	text-align: center;
+}
+.buttons button
+{
+	width: 100%;
+	background: none;
+	outline: none;
+	border: 1px solid #00aeef;
+	box-shadow: 0px 0px 5px white, 0px 0px 3px #00aeef;
+	color: white;
+	font-weight: 900;
+	border-radius: 25px;
+	padding: 6px 8px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.buttons button:hover
+{
+	box-shadow: 0px 0px 10px white, 0px 0px 6px #00aeef;
+}
+.searchName
+{
+	padding: 16px 8px;
+	color: white;
+}
+.searchName i
+{
+	color: white;
+    position: absolute;
+    top: 39px;
+    left: 36px;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0px 15px 0px 0px;
+    border-right: solid 1px white;
+}
+.searchName input
+{
+	position: relative;
+	padding: 8px 0px 8px 60px;
+	font-size: 1.5rem;
+	font-weight: 900;
+	letter-spacing: 1px;
+	background: none;
+	box-shadow: 0px 0px 3px #00aeef;
+	border-radius: 8px;
+	border: none;
+	width: 100%;
+	color: white;
+}
+.searchName label
+{
+	top: 8px;
+    left: 37px;
+	position: absolute;
+	background:rgb(15, 30, 60);
+	z-index: 5;
+}
+.userForm
+{
+	width: 33.33%;
+	text-align: center;
+	border: solid 2px #00aeef;
+	box-shadow: 0px 0px 3px white;
+	border-radius: 8px;
+	margin: 10px 10px 10px 10px;
+	display: block;
+	float: left;
+	padding: 0px 15px;
+}
+.userForm button
+{
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: auto;
+	background: none;
+	color: white;
+	font-size: 1.25rem;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 4px #00aeef, 0px 0px 2px white;
+}
+.userForm input
+{
+	display: block;
+    width: 100%;
+    box-shadow: 0px 0px 3px white, 0px 0px 2px white;
+    border-radius: 8px;
+    position: relative;
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+}
+.userForm label
+{
+	margin: 0 !important;
+	padding: 0px !important;
+	text-align: center;
+}
+#Employees
+{
+	min-height: 100vh;
+	
+}
+.userForm button:hover
+{
+	box-shadow: 0px 0px 6px white, 0px 0px 3px #00aeef;
+}
+.addForm
+{
+	width: 100%;
+	padding: 8px 16px;
+	margin: auto;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	position: relative;
+	box-shadow: 0px 0px 4px #00aeef;
+}
+.addForm input
+{
+	border: none;
+	box-shadow: 0px 0px 4px white;
+	border-radius: 8px;
+	padding: 8px 16px;
+	outline: none;
+	background: none;
+	width: 100%;
+	color: white;
+	position: relative;
+}
+.addForm label
+{
+	background: rgb(15, 30, 60);
+	position: absolute;
+	top: -12px;
+	z-index: 5;
+    left: 4px;
+}
+.addForm button
+{
+	width: 100%;
+	padding: 4px 16px;
+	background: none;
+	border: solid 2px #00aeef;
+	box-shadow: 0px 0px 3px white;
+	outline: none;
+	color: white;
+	border-radius: 8px;
+}
+.addForm button:hover
+{
+	box-shadow: 0px 0px 8px white;
+	font-weight: 900;
+}

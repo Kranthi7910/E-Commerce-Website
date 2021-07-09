@@ -1,0 +1,177 @@
+.slider
+{
+    background: none;
+    overflow: hidden;
+    padding: 0;
+}
+.slider figure
+{
+    position: relative !important;
+    width: 500%;
+    margin: 0 !important;
+    left: 0 !important;
+    animation: 20s slider infinite;
+}
+.back h2
+{
+	font-size: 1.25rem;
+}
+
+@keyframes slider
+{
+    0%
+    {
+        left: 0;
+    }
+    20%
+    {
+        left: 0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left: -100%;
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left: -300%;
+    }
+    95%
+    {
+        left: -300%;
+    }
+    100%
+    {
+        left: -400%;
+    }
+}
+.slider img
+{
+    width: 20%;
+    float: left;
+}
+.text {
+    position:relative;
+    line-height:2em;
+    overflow:hidden;
+    font-size: 2rem;
+    margin:0 auto;
+}
+.fadingEffect {
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background: black;
+    -moz-animation: showHide 9s; /* Firefox */
+    -webkit-animation: showHide 9s; /* Safari and Chrome */
+    -ms-animation: showHide 9s;
+    -o-animation: showHide 9s;
+    animation: showHide 9s;
+}
+@-webkit-keyframes showHide { /* Chrome, Safari */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@-moz-keyframes showHide { /* FF */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@-ms-keyframes showHide { /* IE10 */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@-o-keyframes showHide { /* Opera */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@keyframes showHide {
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+
+.post
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px 8px 15px 8px;
+}
+.postPic
+{
+	width: 100%;
+	height: 100%;
+	padding: 25px 10px;
+}
+.perspective
+{
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    background: none;
+    position: relative;
+}
+.carouselInTheatre, .carouselComingSoon
+{
+    width: 100%;
+}
+.perspective:hover .card
+{
+    transform: rotateY(180deg);
+}
+.front img
+{
+    width: 100%;
+    height: 100%;
+}
+.front, .back
+{
+    padding: 6px 3px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+}
+.back
+{
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 20px 10px;
+    background: rgba(0,0,0,0.7);
+}
+
+.card
+{
+    margin: auto;
+    background: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+#intheatrepage, #comingSoonPage
+{
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
